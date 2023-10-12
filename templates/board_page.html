@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+
+{% block board %}
+<table>
+    {% for row in board %}
+    <tr class="m-2">
+        {% for cell in row %}
+        <td class="fs-2 m-2">
+            {{ cell }}
+            {% endfor %}
+        
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
